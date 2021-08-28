@@ -7,11 +7,6 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-
-    <!--Boostrap Icons-->
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-  </svg>
     
 
 
@@ -52,9 +47,9 @@
    <!--Akhir Navbar-->
   <!--Jumbotron-->
   <section class="jumbotron text-center"> 
-      <img src="img/tw.jpg" alt="" width="180px"
+      <img src="img/wisal.jpg" alt="" width="200px"
       class="rounded-circle img-thumbnail">
-    <h1 class="display-4">Tera Wisal</h1>
+    <h4 class="display-4">Tera Wisal</h4>
     <p class="lead">Mahasiswa Unika</p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,64L34.3,64C68.6,64,137,64,206,106.7C274.3,149,343,235,411,266.7C480,299,549,277,617,229.3C685.7,181,754,107,823,101.3C891.4,96,960,160,1029,176C1097.1,192,1166,160,1234,154.7C1302.9,149,1371,171,1406,181.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" style="--darkreader-inline-fill:#181a1b;" data-darkreader-inline-fill=""></path></svg>
 
@@ -69,21 +64,16 @@
         <h2>About me</h2>
     </div>
 </div>
-<div class="row justify-content-center fs-5 text-center mb-5">
+<div class="row justify-content-center fs-5 text-align mb-5">
 <div class="col-md-4">
     <p>
-    Hi,saya <span>Tera Wisal</span>  mahasiswa Universitas Katolik  santo Thomas Medan, 
-    asal saya Borme,Pegunungan Bintang,Papua.
+      Hi,saya <h5>Tera Wisal</h5> mahasiswa Universitas Katolik  santo Thomas Medan,
+      Fakultas Ilmu Komputer,Tenik Informatika,angkatan 2019.
     </p>
 </div>
 <div class="col-md-4">
-    <p>
-      <h3>Profil Sekilah</h3>
-      - SD negeri Borme Kabupaten Pegunungan Bintang Papua.
-      - SMP negeri Borme Kabupaten Pegunungan Bintang Papua.
-      - SMA GenIUS Tangerang Banten
-
-    </p>
+  
+    
 </div>
 </div>
 </div>
@@ -107,7 +97,7 @@
             <div class="card">
                 <img src="img/projects/1.jpg" class="card-img-top" alt="projects1">
                 <div class="card-body">
-                  <p class="card-text">computer one.</p>
+                  <p class="card-text">omputer satu.</p>
                 </div>
               </div>
         </div>
@@ -115,17 +105,10 @@
             <div class="card">
                 <img src="img/projects/2.jpg" class="card-img-top" alt="projects2">
                 <div class="card-body">
-                  <p class="card-text">computer two.</p>
+                  <p class="card-text">komputer dua.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card">
-                    <img src="img/projects/3.jpg" class="card-img-top" alt="projects3">
-                    <div class="card-body">
-                      <p class="card-text">computer three.</p>
-                    </div>
-                  </div>
 
                       
         </div>
@@ -145,40 +128,89 @@
 
             </div>
         </div>
+
+        <div class="my-alert alert-success alert-dismissible fade show d-none" role="alert ">
+          <strong>Terimakasih </strong> Pesan anda sudah kami terima.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+
+        </div>
         <div class="row justify-content-center mb-3">
             <div class="col-md-6">
                 <div class="mb-3">
                     <label for="name" class="form-label">Nama Lengkap</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="name">
+                    <input type="text" class="form-control" id="name" aria-describedby="name"
+                    name="nama">
                   </div>
-                <form>
+                  
+                <form name="ame-contact-form"> 
                     <div class="mb-3">
                       <label for="email" class="form-label">Email</label>
-                      <input type="email" class="form-control" id="email" aria-describedby="email">
+                      <input type="email" class="form-control" id="email" aria-describedby="email"
+                      name="email">
                       
                     </div>
                     <div class="mb-3">
                         <label for="pesan" class="form-label">Pesan</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" id="pesan" rows="3"
+                        name="pesan"></textarea>
                       </div>
-                    <button type="submit" class="btn btn-primary">Kirim</button>
+                    <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+
+                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                      <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                      Loading...
+                    </button>
                   </form>
             </div>
         </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L34.3,112C68.6,96,137,64,206,80C274.3,96,343,160,411,176C480,192,549,160,617,144C685.7,128,754,128,823,160C891.4,192,960,256,1029,234.7C1097.1,213,1166,107,1234,74.7C1302.9,43,1371,85,1406,106.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" style="--darkreader-inline-fill:#007acc;" data-darkreader-inline-fill=""></path></svg>
-</section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L34.3,112C68.6,96,137,64,206,80C274.3,96,343,160,411,176C480,192,549,160,617,144C685.7,128,754,128,823,160C891.4,192,960,256,1029,234.7C1097.1,213,1166,107,1234,74.7C1302.9,43,1371,85,1406,106.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" style="--darkreader-inline-fill:#6379f3f1;" data-darkreader-inline-fill=""></path></svg>
+</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
   <!--Akhir contact-->
 
 
   <!--Footer-->
   <footer class="bg-primary text-white text-center pb-2">
       
-         <p>>Created with love  by <a  href="https://www.facebook.com/tera.wisal" class=" text-white fw-bold"> Tera Wisal </a></p>
+         <p> Created with love  by <a  href="https://www.facebook.com/tera.wisal" class=" text-white fw-bold"> Tera Wisal </a></p>
       
   </footer>
   <!--Akhir footer-->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwtAToW0K8mcHOgFQQRnyZe8KzaUiEsLLiiKRbK983Zj3JfqkW7W81LMoHzQV7EPzI2Ig/exec'
+      const form = document.forms['ame-contact-form']
+
+      const btnKirim = document.querySelector ('.btn-kirim');
+      const btnLoading = document.querySelector ('.btn-loading');
+      const myAlert = document.querySelector ('.my-alert');
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+
+        //ketika tombol submit di klik
+        //tampilkan tombol loading,tampilkan tombol kirim
+        btnLoading.classList.toggle ('d-none');
+        btnKirim.classList.toggle ('d-none');
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+
+            //tampilkan tombol kirim,hilangkan tombol loading
+             
+            btnLoading.classList.toggle ('d-none');
+            btnKirim.classList.toggle ('d-none');
+            //tampilkan alert
+            myAlert.classList.toggle ('d-none');
+            //reset formnya
+            form.reset ();
+
+            console.log('Success!', response)}
+          )
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
