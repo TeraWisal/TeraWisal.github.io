@@ -1,13 +1,17 @@
 .jumbotron {
   padding-top: 5rem;
   padding-left: 6rem;
-  background-image: url(img/cenderawasih.jpg);
-  background-size: 100%;
+  background-image: url(img/bg.jpg);
+  background-size: auto;
   color: white;
+  text: emphasis style 50px;
 }
 #projects {
   background-color: crimson;
 }
 section {
   padding-top: 2rem;
+}
+mm {
+  width: ;
 }
